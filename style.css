@@ -1,0 +1,30 @@
+.header{
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .logo i{
+    color: rgb(235, 5, 5);
+}
+.header .navbar a{
+    font-size: 1.2rem;
+}
+.header .navbar a:hover{
+    color: rgb(235, 5, 5);
+}
+#menu-button{
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: black;
+    padding: .3rem .3rem;
+    cursor: pointer;
+}
