@@ -5,17 +5,23 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+
+}
+.header a{
+    text-decoration: none;
 }
 
 .header .logo{
     font-size: 2rem;
-    color: var(--black);
+    color: rgb(9, 101, 96);
 }
 .header .logo i{
     color: rgb(235, 5, 5);
 }
 .header .navbar a{
     font-size: 1.2rem;
+    margin: 0px 10px;
+    color: rgb(9, 101, 96);
 }
 .header .navbar a:hover{
     color: rgb(235, 5, 5);
@@ -24,7 +30,42 @@
     font-size: 1.8rem;
     border-radius: .5rem;
     background: #eee;
-    color: black;
+    color: rgb(9, 101, 96);
     padding: .3rem .3rem;
     cursor: pointer;
+    
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 10rem;
+}
+
+.home .image{
+    flex:1 1 45rem;
+}
+
+.home .image img{
+    width: 50%;
+}
+
+.home .content{
+    flex:1 1 45rem;
+}
+.home .content h3{
+    font-size:3rem;
+    color:var(--black);
+    line-height: 1.8;
+   
+    
+    
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:rgb(9, 101, 96);
+    line-height: 1.8;
+    padding: 1rem 0;
 }
