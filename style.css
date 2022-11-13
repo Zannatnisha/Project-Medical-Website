@@ -2,10 +2,43 @@
     --green:#16a085;
     --black:#444;
     --light-color:#777;
-    --border:.1rem solid var(--green);
+    --border:.2rem solid var(--green);
 }
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+
+html{
+    font-size: 80.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
 section{
-        padding:10px;
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 5rem;
+    
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
 }
 
 .header{
@@ -37,15 +70,17 @@ section{
 .header .navbar a:hover{
     color: rgb(235, 5, 5);
 }
-#menu-button{
-    font-size: 1.8rem;
+#menu-btn{
+    font-size: 2.5rem;
     border-radius: .5rem;
     background: #eee;
-    color: rgb(9, 101, 96);
-    padding: .3rem .3rem;
+    color:var(--green);
+    padding: 1rem 1.5rem;
     cursor: pointer;
-    
+    display: none;
 }
+    
+
 .home{
     display: flex;
     align-items: center;
@@ -69,9 +104,6 @@ section{
     font-size:3rem;
     color:black;
     line-height: 1.8;
-   
-    
-    
 }
 
 .home .content p{
@@ -160,8 +192,7 @@ section{
 }
 .about .heading{
     
-    font-size: 3.5rem;
-    color: var(--green);
+    font-size: 4.5rem;
 }
 
 .about .row .image{
@@ -189,27 +220,23 @@ section{
     font-size: 1.5rem;
     line-height: 1.8;
 }
-.doctors .heading{
-    font-size: 3.5rem;
-    color: var(--green);
-
+.book .row{
+    display: flex;
+    align-items: center;
+    
 }
-.doctors{
-        align-items: center;
-        justify-content: start;
-        gap:1.5rem;
-        
-}
-.doctors .box-container{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
-    
-    
-    
+ 
+.book .row .image{
+    width:50%;
 }
 
-.doctors .box-container .box img{
+
+.book .row form{
+    width: 40%;
+    background: #fff;
     border:var(--border);
+    text-align: center;
+    padding: 2rem;
     border-radius: .5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -219,33 +246,79 @@ section{
     
 }
 
+.book .row form h3{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.book .row form .box{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.book .row form .btn{
+    padding:1rem 4rem;
+    font-weight: bold;
+    font-size: 15px;
+}
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+
+.doctors .box-container .box{
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:1rem;
+}
+
+.doctors .box-container .box img{
+    height: 15rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .doctors .box-container .box h3{
     color:var(--black);
-    font-size: 30px;
-   
+    font-size: 2.5rem;
 }
 
 .doctors .box-container .box span{
     color:var(--green);
     font-size: 1.5rem;
-   
 }
 
-
+.doctors .box-container .box .share{
+    padding-top: 1rem;
+}
 
 .doctors .box-container .box .share a{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 56px;
+    width: 55px;
+    line-height: 4.5rem;
     font-size: 2rem;
-    text-align: center;
     color:var(--green);
     border-radius: .5rem;
     border:var(--border);
     margin:.3rem;
     
 }
-
 .doctors .box-container .box .share a:hover{
     background:var(--green);
     color:#fff;
+    box-shadow: var(--box-shadow);
 }
