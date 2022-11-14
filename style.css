@@ -3,6 +3,8 @@
     --black:#444;
     --light-color:#777;
     --border:.2rem solid var(--green);
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -86,7 +88,7 @@ section:nth-child(even){
     align-items: center;
     justify-content: start;
     gap:1.5rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 .home .image{
@@ -135,6 +137,7 @@ section:nth-child(even){
     color:var(--green);
     padding-bottom: .7rem;
     text-decoration: none;
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -160,6 +163,7 @@ section:nth-child(even){
     cursor: pointer;
     font-size: 1.2rem;
     background: #fff;
+    box-shadow: var(--box-shadow);
 }
 .btn span{
     padding:.7rem 1rem;
@@ -179,11 +183,43 @@ section:nth-child(even){
     background:#fff;
     margin-left: 1rem;
 }
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+
+.services .box-container .box{
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 1.5rem;
+}
+
+.services .box-container .box i{
+    color: var(--green);
+    font-size: 3rem;
+    padding-bottom: .2rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding:.05rem 0;
+}
+
+.services .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.2rem;
+    line-height: 2;
+}
 .about{
     align-items: center;
     justify-content: start;
     gap:1.5rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 .about .row{
     display: flex;
@@ -242,6 +278,7 @@ section:nth-child(even){
     margin-bottom: 1rem;
     max-width: 100%;
     height: auto;
+    box-shadow: var(--box-shadow);
     
     
 }
@@ -322,3 +359,47 @@ section:nth-child(even){
     color:#fff;
     box-shadow: var(--box-shadow);
 }
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:8rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.3rem;
+    color:var(--light-color);
+    padding: .5rem 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:1.5rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
