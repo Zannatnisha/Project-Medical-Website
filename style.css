@@ -133,11 +133,11 @@ section:nth-child(even){
 }
 
 .icons-container .icons i{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color:var(--green);
     padding-bottom: .7rem;
     text-decoration: none;
-    box-shadow: var(--box-shadow);
+    
     
 }
 
@@ -395,7 +395,19 @@ section:nth-child(even){
     padding-bottom: 2rem;
     
 }
-
+.covid .container{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.info {
+    padding-top: 2rem;
+}
+.btn-details{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+}
 
 .footer .box-container{
     display: grid;
@@ -439,4 +451,7 @@ section:nth-child(even){
 .footer .credit span{
     color:var(--green);
 }
+
+
+
 
