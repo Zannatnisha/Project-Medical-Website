@@ -180,11 +180,12 @@ section:nth-child(even){
     padding-bottom: .7rem;
 }
 
-.icons-container .icons h3{
+.icons-container .icons span{
     font-size: 4.5rem;
     color:var(--black);
     padding: .5rem 0;
     text-shadow: var(--text-shadow);
+    font-weight: 900;
 }
 
 .icons-container .icons p{
