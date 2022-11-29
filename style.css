@@ -164,6 +164,7 @@ section:nth-child(even){
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding-top: 5rem;
     padding-bottom: 5rem;
+
 }
 
 .icons-container .icons{
@@ -172,6 +173,8 @@ section:nth-child(even){
     border-radius: .5rem;
     text-align: center;
     padding: 2.5rem;
+    font-size: 22px;
+    color: var(--black);
 }
 
 .icons-container .icons i{
