@@ -24,7 +24,7 @@ valuedisplays.forEach((valuedisplay) => {
         startvalue += 1;
         valuedisplay.textContent = startvalue;
         if (startvalue == endvalue) {
-            // clearInterval(counter);
+            clearInterval(counter);
         }       
     }, duration);
 });
