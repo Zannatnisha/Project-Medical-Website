@@ -518,7 +518,7 @@ section:nth-child(even){
     z-index: -1;
 }
 
-.covid .container{
+.covid .covid-container{
     font-size: 15px;
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -529,7 +529,7 @@ section:nth-child(even){
     padding-top: 2rem;
 
 }
-.covid .container .paper{
+.covid .covid-container .paper{
     padding-left: 20px;
 }
 .btn-details{
